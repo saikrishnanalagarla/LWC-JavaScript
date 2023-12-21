@@ -1,0 +1,27 @@
+<template>
+<div style="height: 500px; width: 500px; margin: auto;">
+    <label>Calculator</label>
+    <lightning-input type="text" label="Enter the First number" onchange={handleFirstnum} value={num1}></lightning-input>
+    <lightning-input type="text" label="Enter the Second number" onchange={handleSecondnum} value={num2}></lightning-input>
+    <lightning-input type="text" label="Enter the Third number" onchange={handleThirdnum} value={num3}></lightning-input>
+
+    <lightning-button-group>
+        <lightning-button label="submit" variant="brand" onclick={handleCalculate}></lightning-button>
+        <lightning-button label="clear" onclick={handleClear}></lightning-button>
+    </lightning-button-group>
+</div>
+
+<div style="height: 500px; width: 500px; margin: auto; background-color: aqua;">
+    <label>Calculator</label>
+    <lightning-input type="text" label="Enter the First number" name="f1" onchange={handlemethod} value={num1}></lightning-input>
+    <lightning-input type="text" label="Enter the Second number" name="s1" onchange={handlemethod} value={num2}></lightning-input>
+    <lightning-input type="text" label="Enter the Third number" name="t1" onchange={handlemethod} value={num3}></lightning-input>
+
+    <lightning-button-group>
+        <lightning-button label="submit" variant="brand" onclick={handleCalculate}></lightning-button>
+        <lightning-button label="clear" onclick={handleClear}></lightning-button>
+    </lightning-button-group>
+</div>
+
+
+</template>
