@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        let arr=["sai","gopi","krishna"];
+        document.write("arrays sorting :"+arr.sort);
+        document.write(arr+"<br>");
+        for(let i=0;i<arr.length;i++){
+            document.write(arr[i]+",");
+        }
+        arr[4]="kanna";
+        document.write("<br>"+arr);
+
+        let arrStore=[];
+        let size=window.prompt("enter the size of array");
+        for(let i=0;i<size;i++){
+            arrStore[i]=window.prompt("enter the value");
+        }
+        document.write(arrStore);
+        function typesofarrays(){
+            document.write("<h2>1.push and pop methods</h2>");
+            document.write("<h2>2.shift and unshift methods</h2>");
+            document.write("<h1>3.index based randomly ex:arr[0]<h2/");
+        }
+    </script>
+
+    <h1> we can store and retrive data in 3 ways</h1>
+    <button onclick="typesofarrays()">Click here for types of stroing data in arrays</button>
+    
+</body>
+</html>
