@@ -1,0 +1,14 @@
+<template>
+    <template lwc:if={ready}>
+    <lightning-card title="First component" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p> Hello {greeting}</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-badge ></lightning-badge>
+    <lightning-input></lightning-input>
+    <lightning-formatted-address></lightning-formatted-address>
+</template>
+
+</template>
