@@ -1,0 +1,19 @@
+<template>
+    <div style="height: 700px; width: 700px; margin:auto;" >
+   <lightning-card title="LWC component" icon-name="standard:account">
+    Name:{name}
+    <lightning-input type="text" label="Enter some text" required="true"
+    style="width: 200px;" onchange={handleChange}></lightning-input> 
+    <lightning-button label="submit" onclick={handleSubmit}></lightning-button>  
+   
+    <!--
+   <lightning-label>Username</lightning-label>
+     -->
+   <br>  <label>Username</label>
+    <lightning-input type="text"> </lightning-input>
+  
+    <label >Address</label>
+    <lightning-input-address address-label="Address"></lightning-input-address>
+</lightning-card>
+</div>
+</template>
